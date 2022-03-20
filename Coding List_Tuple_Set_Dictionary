@@ -1,0 +1,70 @@
+
+
+fruits = ['apel', 'anggur', 'nenas', 'pepaya', 'durian']
+for i in fruits :
+  print(i)
+  
+  fruits = ['apel', 'anggur', 'nenas', 'pepaya', 'durian']
+print (fruits)
+print()
+
+fruits [1] = 'kiwi'
+print(fruits)
+
+fruits = ['apel', 'anggur', 'nenas', 'pepaya', 'durian']
+print (fruits)
+print()
+
+del fruits [0]
+print(fruits)
+
+fruits = ['apel', 'anggur', 'nenas', 'pepaya', 'durian']
+print (fruits)
+print()
+
+fruits.append('mangga')
+print(fruits)
+
+
+
+Mytuple = ('apel', 'anggur', 'nenas', 'pepaya', 'durian',)
+print(Mytuple)
+
+Mytuple [0]
+
+Mytuple = ('apel', 'anggur', 'nenas', 'pepaya', 'durian',)
+fruits = list(Mytuple)
+fruits.append('mangga')
+Mytuple = tuple(fruits)
+print(Mytuple)
+
+Mytuple = ('apel', 'anggur', 'nenas', 'pepaya', 'durian',)
+fruits = list(Mytuple)
+fruits.remove('apel')
+Mytuple = tuple(fruits)
+print(Mytuple)
+
+
+
+data = {'nama':'Ansar',
+             'umur': 19,
+             'hobi':'menyanyi'
+          
+}
+
+data ['nama'] = 'Joko'
+
+data ['alamat'] = 'campalagian'
+
+del data ['hobi']
+
+print(data)
+
+
+orang = {'Awal','Ansar','Abdil','Awal'}
+
+
+orang.add('Adrian')
+orang.remove('Awal')
+
+print(orang)

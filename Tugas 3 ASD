@@ -1,0 +1,37 @@
+
+List = []
+Tugas = 0
+while Tugas != 7:
+    print ('1.Tambah 2.Hapus 3.Edit 4.Tampilkan 5.Cari List 6.cari Index 7.Hasil')
+    Tugas = int(input('Masukkan Tugas:'))
+
+    if Tugas == 1:
+        File = input('Masukkan List:')
+        List.append (File)
+        print (List)
+    elif Tugas == 2:
+        File = int(input('Masukkan Index Yang ang Dihapus'))
+        List.pop(File)
+        print (List)
+    elif Tugas == 3:
+        edit = int(input('Masukkan Index yang akan diedit '))
+        if edit > (len(List)-1):
+         print('Index tidak ditemukan')
+        else:
+         List [edit] = input('Masukkan Index Baru :')
+    elif Tugas == 4:
+        for i in range (len(List)):
+          print (List [i])
+    elif Tugas == 5:
+        Cari_List = input('Masukkan List Yang Dicari :')
+        for i in range (len(List)):
+          if List [i] == Cari_List:
+           print('List ditemukan')        
+          else:
+           print('List tidak Ditemukan')
+    elif Tugas == 6:
+         Cari_Index = input('Masukkan Index yang Dicari:')
+         if Cari_Index in List:
+          print('Iist.Index (Cari_Index))
+         else:
+          print('Index tidak ditemukan')
